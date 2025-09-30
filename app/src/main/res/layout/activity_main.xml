@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/firstlab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
@@ -20,13 +20,24 @@
         app:layout_constraintVertical_bias="0.598" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnChangeTextClick"
         android:layout_width="178dp"
         android:layout_height="112dp"
         android:layout_marginTop="40dp"
-        android:text="Button"
+        android:text="@string/changetext"
+        android:onClick="ChangeTextClick"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/firstlab" />
+
+    <Button
+        android:id="@+id/btnChangeColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ChangeColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnChangeTextClick" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
